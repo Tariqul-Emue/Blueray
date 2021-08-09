@@ -1,0 +1,456 @@
+$text_primary : #fff;
+$text_secoundary : #ccc;
+$bg_section : #666666;
+$theme_color :#33ccff;
+$visit_me :#333333;
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+/*header stART*/
+header{
+	
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+background-image: url('../images/hero.jpg');
+.header_top{
+	position: relative;
+	z-index: 1;
+	padding: 15px 0;
+
+&:after{
+	position: absolute;
+	content : '';
+	background: $bg_section;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	opacity: .7;
+	}
+	.logo h2{
+		text-transform: uppercase;
+		font-size: 30px;
+		font-weight: 700;
+		vertical-align: center;
+
+    margin: 10px 0 0px 0;
+		color: $text_primary;
+		span{
+			color: $theme_color ;
+
+		}
+
+	}
+	nav{
+		ul{
+			li{
+				a{
+					color:$text_primary;
+					font-weight: 500;
+					font-size: 14px;
+					margin-left: 15px;
+					border: 1px solid transparent;
+					&:hover{
+						color: $theme_color;
+						border: 1px solid $theme_color;
+
+					}
+
+				}
+			}
+		}
+	}
+}
+}
+
+
+.slogun{
+	width: 70%;
+	margin: 250px auto;
+	text-align: center;
+	text-transform: uppercase;
+	h2{
+		color:$text_primary; 
+		
+		p{
+			background: $bg_section;
+			padding: 5px 0px;
+			    margin-bottom: 6px;
+    font-weight: 100;
+    font-size: 30px;
+		}
+	}
+
+}
+
+/*header END*/
+
+/*SERVICE stART*/
+
+.sec_padding{
+	padding: 50px 0;
+}
+.section-titel h2{
+	text-transform: uppercase;
+	font-weight: 200;
+	position: relative;
+	&:after{
+		position: absolute;
+		content: '';
+		width: 40px;
+		height: 2px;
+		background: $text_primary;
+		left: 0;
+		bottom: -2px;
+	}
+}
+.service_area{
+	background: $theme_color;
+	color: $text_primary;
+}
+.single_service{
+	img{
+		margin: 19px 0;
+}
+	
+	h3{
+font-weight: 400;
+text-transform: uppercase;
+	}
+	p{
+		font-weight: 300;
+		font-size: 12px;
+	}
+}
+
+/*SERVICE END*/
+/*pORTFOLIO sTART*/
+
+ .portfolio_section
+ .section-titel h2{
+	position: relative;
+	color: $bg_section;
+	&:after{
+		position: absolute;
+		content: '';
+		background: $bg_section;
+	}
+} 
+.portfolio_section 
+
+	{
+		ul{
+			li{
+				a{
+					color:$bg_section;
+					font-weight: 600;
+					font-size: 14px;
+					margin-left: 10px;
+					text-transform: uppercase;
+					border: 1px solid transparent;
+					&:hover{
+						color: $theme_color;
+
+						border: 1px solid $theme_color;
+
+					}
+
+				}
+			}
+		}
+	}
+
+/*pORTFOLIO 1ST END*/
+/*pORTFOLIO 2ND START*/
+
+.portfolio_section{
+	padding-top: 30px;
+
+	.single_portfolio{
+	width: 95%;
+	height: 95%;
+	position: relative;
+	overflow: hidden;
+
+				z-index: 1;
+		&::after{
+				width: 100%;
+				height: 100%;
+				background: $bg_section;
+				position: absolute;
+				content: '';
+				bottom: 0;
+				left: 0;
+				opacity: .5;
+				z-index: -1;
+
+
+			}
+
+		.portfolio_hover{
+			
+
+
+			
+
+
+			i{
+				position: absolute;
+			content: '';
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+				color: $text_primary;
+				width: 35px;
+				height: 35px;
+				border: 1px solid $text_primary;
+				border-radius: 3px;
+				text-align: center;
+				line-height: 35px ;
+			}
+		}
+		.portfolio_img{
+			img{
+
+			}
+		}
+	}
+
+}
+
+
+/*pORTFOLIO END*/
+/*vedio start*/
+
+.vedio_section{
+	background: $bg_section;
+	.section-titel{
+		color :$text_secoundary;
+		h2{
+			margin-bottom: 50px;
+			&::after{ 
+    background: $text_secoundary;
+			}
+
+		}
+	}
+	p{
+		color: $text_secoundary;
+		font-size: 14px;
+		font-weight: 400;
+		margin-top: 20px 0;
+	}
+	a{
+		text-decoration: none;
+		display: inline-block;
+		color: $visit_me;
+		    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px 45px;
+    border: 2px solid;
+    margin-top: 15px;
+
+	}
+	.vedio{
+		
+			iframe {
+		    height: 300px;
+		    width: 100%;
+		    margin-top: -65px;
+}
+		}
+
+	}
+
+
+
+
+/*vedio END*/
+/*twitter start*/
+.twitter_area{
+	background: $theme_color;
+	color: $text_primary;
+	a{
+		i{
+			color: $text_primary;
+		}
+	}
+	.twitter_about{
+		margin-top: 30px;
+		
+		font-weight: 300;
+		p{
+			font-size: 20px;
+				span{
+				font-weight: 500;	
+				}
+			
+		}
+	}
+}
+
+/*twitter END*/
+/*about start*/
+.about_section{
+	background: #ccc;
+	background: url('../images/john.jpg');
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	color: $text_secoundary;
+	p{
+		margin-top: 20px;
+		font-size: 13px;
+	}
+	.about_first{
+		margin-top: 30px;
+
+	}
+	.about_secound{
+	margin-top: 30px;	
+	}
+	.about_social{
+		margin-top: 20px;
+		ul{
+			li{
+				margin-right:  15px;
+				a{
+					i{
+						color:$text_secoundary;
+						width: 40px;
+						height: 40px;
+						border: 2px solid;
+						border-radius: 3px;
+						line-height: 40px;
+						text-align: center;
+
+
+					}
+				}
+			}
+		}
+	}
+
+}
+
+/*about END*/
+/*testimonial start*/
+.testimonial_area{
+	color: $bg_section ;
+.section-titel h2:after {
+    position: absolute;
+    background: $bg_section;
+}
+	p{
+	font-weight: 300;
+    font-size: 20px;
+    margin-top: 28px;
+    line-height: 1.6;
+    letter-spacing: 1.2px;
+    span{
+    	color: $theme_color;
+    	font-weight: 600;
+    	font-size: 14px;
+    }
+}
+	}
+
+
+/*testimonial END*/
+/*contact start*/
+.contact_area{
+	background: $theme_color;
+	background: url('../images/blueasy-freebie.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: $text_primary;
+
+	.section-titel{
+		margin-bottom: 40px;
+	}
+	p{
+		font-weight: 400;
+		font-size: 13px;
+		margin-top: 20px;
+	}
+	.contact{
+			.form-group{
+		label{
+		}
+		.form-control{
+			 width: 75%;
+		}
+	}
+	}
+	.form-group{
+		label{
+			text-transform: uppercase;
+			&:focus{
+				background-color: #fff0;
+			}
+		}
+		.form-control{
+			 width: 90%;
+			  background-color: #fff0;
+			  border: 2px solid #ced4da;
+		}
+		textarea{
+			margin-bottom: 10px;
+			&:focus{
+				background-color: #fff0;
+			}
+
+		}
+		a.btn.btn-info {
+    border-radius: 0;
+    background: $theme_color;
+    padding: 3px 100px;
+&:hover{
+	color: $theme_color;
+	border: 1px solid;
+	background: transparent;
+}
+}
+	}
+
+	address{
+		p{
+			margin-top: -8px;
+		}
+	}
+	input,textarea .form-control {
+    color: $theme_color;
+}
+}
+
+
+
+
+/*contact END*/
+/*footer area start*/
+footer{
+	background: $visit_me ;
+	color:$bg_section ;
+	ul{
+		li{
+			margin-right: 10px;
+
+			a{
+				color:$bg_section ;
+				&:hover{
+					    color:$theme_color ;
+    					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+/*footer area end*/

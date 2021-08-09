@@ -1,0 +1,363 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/*header stART*/
+header {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/hero.jpg");
+}
+header .header_top {
+  position: relative;
+  z-index: 1;
+  padding: 15px 0;
+}
+header .header_top:after {
+  position: absolute;
+  content: '';
+  background: #666666;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: .7;
+}
+header .header_top .logo h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 700;
+  vertical-align: center;
+  margin: 10px 0 0px 0;
+  color: #fff;
+}
+header .header_top .logo h2 span {
+  color: #33ccff;
+}
+header .header_top nav ul li a {
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  margin-left: 15px;
+  border: 1px solid transparent;
+}
+header .header_top nav ul li a:hover {
+  color: #33ccff;
+  border: 1px solid #33ccff;
+}
+
+.slogun {
+  width: 70%;
+  margin: 250px auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+.slogun h2 {
+  color: #fff;
+}
+.slogun h2 p {
+  background: #666666;
+  padding: 5px 0px;
+  margin-bottom: 6px;
+  font-weight: 100;
+  font-size: 30px;
+}
+
+/*header END*/
+/*SERVICE stART*/
+.sec_padding {
+  padding: 50px 0;
+}
+
+.section-titel h2 {
+  text-transform: uppercase;
+  font-weight: 200;
+  position: relative;
+}
+.section-titel h2:after {
+  position: absolute;
+  content: '';
+  width: 40px;
+  height: 2px;
+  background: #fff;
+  left: 0;
+  bottom: -2px;
+}
+
+.service_area {
+  background: #33ccff;
+  color: #fff;
+}
+
+.single_service img {
+  margin: 19px 0;
+}
+.single_service h3 {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.single_service p {
+  font-weight: 300;
+  font-size: 12px;
+}
+
+/*SERVICE END*/
+/*pORTFOLIO sTART*/
+.portfolio_section
+.section-titel h2 {
+  position: relative;
+  color: #666666;
+}
+.portfolio_section
+.section-titel h2:after {
+  position: absolute;
+  content: '';
+  background: #666666;
+}
+
+.portfolio_section ul li a {
+  color: #666666;
+  font-weight: 600;
+  font-size: 14px;
+  margin-left: 10px;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+}
+.portfolio_section ul li a:hover {
+  color: #33ccff;
+  border: 1px solid #33ccff;
+}
+
+/*pORTFOLIO 1ST END*/
+/*pORTFOLIO 2ND START*/
+.portfolio_section {
+  padding-top: 30px;
+}
+.portfolio_section .single_portfolio {
+  width: 95%;
+  height: 95%;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.portfolio_section .single_portfolio::after {
+  width: 100%;
+  height: 100%;
+  background: #666666;
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  opacity: .5;
+  z-index: -1;
+}
+.portfolio_section .single_portfolio .portfolio_hover i {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 35px;
+}
+
+/*pORTFOLIO END*/
+/*vedio start*/
+.vedio_section {
+  background: #666666;
+}
+.vedio_section .section-titel {
+  color: #ccc;
+}
+.vedio_section .section-titel h2 {
+  margin-bottom: 50px;
+}
+.vedio_section .section-titel h2::after {
+  background: #ccc;
+}
+.vedio_section p {
+  color: #ccc;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 20px 0;
+}
+.vedio_section a {
+  text-decoration: none;
+  display: inline-block;
+  color: #333333;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 10px 45px;
+  border: 2px solid;
+  margin-top: 15px;
+}
+.vedio_section .vedio iframe {
+  height: 300px;
+  width: 100%;
+  margin-top: -65px;
+}
+
+/*vedio END*/
+/*twitter start*/
+.twitter_area {
+  background: #33ccff;
+  color: #fff;
+}
+.twitter_area a i {
+  color: #fff;
+}
+.twitter_area .twitter_about {
+  margin-top: 30px;
+  font-weight: 300;
+}
+.twitter_area .twitter_about p {
+  font-size: 20px;
+}
+.twitter_area .twitter_about p span {
+  font-weight: 500;
+}
+
+/*twitter END*/
+/*about start*/
+.about_section {
+  background: #ccc;
+  background: url("../images/john.jpg");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #ccc;
+}
+.about_section p {
+  margin-top: 20px;
+  font-size: 13px;
+}
+.about_section .about_first {
+  margin-top: 30px;
+}
+.about_section .about_secound {
+  margin-top: 30px;
+}
+.about_section .about_social {
+  margin-top: 20px;
+}
+.about_section .about_social ul li {
+  margin-right: 15px;
+}
+.about_section .about_social ul li a i {
+  color: #ccc;
+  width: 40px;
+  height: 40px;
+  border: 2px solid;
+  border-radius: 3px;
+  line-height: 40px;
+  text-align: center;
+}
+
+/*about END*/
+/*testimonial start*/
+.testimonial_area {
+  color: #666666;
+}
+.testimonial_area .section-titel h2:after {
+  position: absolute;
+  background: #666666;
+}
+.testimonial_area p {
+  font-weight: 300;
+  font-size: 20px;
+  margin-top: 28px;
+  line-height: 1.6;
+  letter-spacing: 1.2px;
+}
+.testimonial_area p span {
+  color: #33ccff;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/*testimonial END*/
+/*contact start*/
+.contact_area {
+  background: #33ccff;
+  background: url("../images/blueasy-freebie.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+}
+.contact_area .section-titel {
+  margin-bottom: 40px;
+}
+.contact_area p {
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 20px;
+}
+.contact_area .contact .form-group .form-control {
+  width: 75%;
+}
+.contact_area .form-group label {
+  text-transform: uppercase;
+}
+.contact_area .form-group label:focus {
+  background-color: #fff0;
+}
+.contact_area .form-group .form-control {
+  width: 90%;
+  background-color: #fff0;
+  border: 2px solid #ced4da;
+}
+.contact_area .form-group textarea {
+  margin-bottom: 10px;
+}
+.contact_area .form-group textarea:focus {
+  background-color: #fff0;
+}
+.contact_area .form-group a.btn.btn-info {
+  border-radius: 0;
+  background: #33ccff;
+  padding: 3px 100px;
+}
+.contact_area .form-group a.btn.btn-info:hover {
+  color: #33ccff;
+  border: 1px solid;
+  background: transparent;
+}
+.contact_area address p {
+  margin-top: -8px;
+}
+.contact_area input, .contact_area textarea .form-control {
+  color: #33ccff;
+}
+
+/*contact END*/
+/*footer area start*/
+footer {
+  background: #333333;
+  color: #666666;
+}
+footer ul li {
+  margin-right: 10px;
+}
+footer ul li a {
+  color: #666666;
+}
+footer ul li a:hover {
+  color: #33ccff;
+  text-decoration: none;
+}
+
+/*footer area end*/
+
+/*# sourceMappingURL=style.css.map */
